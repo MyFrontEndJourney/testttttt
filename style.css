@@ -162,4 +162,8 @@ img {
     grid-area: 5 / 1 / span 1 / span 4;
   }
 
+  #grid {
+    width: 100vw;
+  }
+
 }
