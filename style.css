@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+:root {
+  font-size: 16px;
+}
+
 body {
   background-color: hsl(210, 46%, 95%);
   display: flex;
@@ -11,6 +15,7 @@ body {
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  font-family: "Barlow Semi Condensed";
 }
 
 #grid {
@@ -18,7 +23,7 @@ body {
   grid-gap: 2rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  margin: 10vh 10vw;
+  max-width: 70vw;
 }
 
 #card-1 {
@@ -53,4 +58,69 @@ body {
 #card-5 {
   border-radius: 20px;
   padding: 2rem;
+}
+
+#card-2 .name,
+#card-2 .text-large,
+#card-4 .name,
+#card-4 .text-large,
+#card-1 .name,
+#card-1 .text-large {
+  color: white;
+}
+
+#card-2 .verified,
+#card-4 .verified,
+#card-1 .verified {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#card-2 .text-small,
+#card-4 .text-small,
+#card-1 .text-small {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#card-3 .name,
+#card-3 .text-large,
+#card-5 .name,
+#card-5 .text-large {
+  color: hsl(217, 19%, 35%);
+}
+
+#card-3 .verified,
+#card-5 .verified {
+  color: hsla(217, 19%, 35%, 0.5);
+}
+
+#card-3 .text-small,
+#card-5 .text-small {
+  color: hsla(217, 19%, 35%, 0.7);
+}
+
+.text-large {
+  font-weight: 600;
+}
+
+.text-small,
+.name {
+  font-size: 1rem;
+}
+
+.verified {
+  font-size: 0.85rem;
+}
+
+.text-large {
+  font-size: 1.5rem;
+}
+
+.text-small,
+.text-large {
+  margin-top: 2rem;
+}
+
+img {
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.5);
 }
