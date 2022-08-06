@@ -120,7 +120,28 @@ body {
   margin-top: 2rem;
 }
 
+.top-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.top-flex-words {
+  display: flex;
+  flex-direction: column;
+}
+
 img {
   border-radius: 50%;
-  border: 3px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-right: 1rem;
+}
+
+.name {
+
+}
+
+.verified {
+
 }
